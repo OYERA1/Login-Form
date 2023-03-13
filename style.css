@@ -18,10 +18,12 @@
 
 body {
   background-color: var(--background);
+  height: 100vh;
 }
 
 .wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .left {
@@ -304,6 +306,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 14px;
 }
 
 .fim > p {
@@ -327,12 +330,13 @@ a {
 }
 
 .right {
-  background-image: url(./assets/side-image.jpg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100vw - 35.75rem);
+  background-image: url(./assets/side-image-2x.jpg);
+  background-size: contain;
+  background-position:right;
   background-repeat: no-repeat;
-  position: relative;
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  box-sizing: border-box;
 }

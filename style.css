@@ -6,6 +6,7 @@
   --background: #191816;
   --form-background: #24221f;
   --primary-color: #ffc632;
+  --button-color: #473404;
 }
 
 * {
@@ -288,8 +289,8 @@ body {
 
 .form_button {
   background-color: var(--primary-color);
-  color: var(--form-background);
-  border: 1px solid var(--form-background);
+  
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -299,6 +300,15 @@ body {
   height: 3.1875rem;
   border-radius: 4px;
   margin-top: 1.25rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: var(--button-color);
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
 }
 
 /*-----------------------------------------*/
@@ -337,6 +347,6 @@ a {
   width: calc(100vw - 35.75rem);
   background-image: url(./assets/side-image-2x.jpg);
   background-size: contain;
-  background-position:right;
+  background-position: right;
   background-repeat: no-repeat;
 }

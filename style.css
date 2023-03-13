@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--text-base);
+}
+
+body {
+  background-color: var(--background);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.left {
+  position: relative;
+  justify-content: center;
+  margin-right: 74px;
+}
+
+.left > header {
+  margin: 2.5rem 2.5rem 7.875rem 2.5rem;
+}
+
+.card {
+  display: flex;
+  background-color: var(--form-background);
+  margin: 0 4.625rem;
+  width: 35.75rem;
+  height: 32rem;
+  border-radius: 0.25rem;
+  padding: 3.4375rem 7.4375rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.title > p {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text-title);
+  margin-bottom: 0.3125rem;
+}
+
+.form_header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1.6875rem;
+}
+
+.form_header > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-base);
+}
+
+/* ------------------------------  Email  --------------------------------------------- */
+
+.margin-email {
+  margin-top: 1.6875rem;
+}
+
+.form_mail {
+  margin-top: 5px;
+}
+
+.formMail {
+  font-family: Poppins;
+  color: var(--text-base);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.div_email {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.3125rem;
+  padding: 0.75rem;
+  outline: 1px solid var(--text-base);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.3125rem;
+}
+
+.emailImage {
+  background-image: url("./assets/mail.svg");
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-position: center;
+  order: -1;
+}
+
+.email_input {
+  background: none;
+  border: none;
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.email_input::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-base);
+  background: none;
+}
+
+.email_input:focus::placeholder {
+  visibility: hidden;
+}
+
+.email_input:focus {
+  border-color: transparent;
+  outline: none;
+  color: var(--primary-color);
+}
+
+.email_input:focus + .div_email,
+.div_email:focus-within {
+  outline: 1px solid var(--primary-color);
+}
+
+#FocusEmail:focus + .emailImage {
+  background-image: url("./assets/mail-focus.svg");
+}
+
+/* ------------------------------  Password --------------------------------------------- */
+
+.margin-password {
+  margin-top: 1.25rem;
+}
+
+.form_pass {
+  margin-top: 0.3125rem;
+}
+
+.formPassword {
+  font-family: Poppins;
+  color: var(--text-base);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.div_pass {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.3125rem;
+  padding: 0.75rem;
+  outline: 1px solid var(--text-base);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.3125rem;
+}
+
+.lockImage {
+  background-image: url("./assets/lock.svg");
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-position: center;
+  order: -1;
+}
+
+.pass_input {
+  background: none;
+  border: none;
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.pass_input::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-base);
+  background: none;
+}
+
+.pass_input:focus::placeholder {
+  visibility: hidden;
+}
+
+.pass_input:focus {
+  border-color: transparent;
+  outline: none;
+  color: var(--primary-color);
+}
+
+.pass_input:focus + .div_pass,
+.div_pass:focus-within {
+  outline: 1px solid var(--primary-color);
+}
+
+#lockFocus:focus + .lockImage {
+  background-image: url("./assets/lock-focus.svg");
+}
+
+/* -----------------------------------Remember--------------------------------------------------------- */
+
+.form_remember {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+}
+
+.checkbox {
+  appearance: none;
+  border: 1px solid var(--text-base);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.checkbox:checked {
+  background-color: var(--primary-color);
+  background-image: url(./assets/check.svg);
+}
+
+.remember {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.senha {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.form_button {
+  background-color: var(--primary-color);
+  color: var(--form-background);
+  border: 1px solid var(--form-background);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  width: 20.875rem;
+  height: 3.1875rem;
+  border-radius: 4px;
+  margin-top: 1.25rem;
+}
+
+/*-----------------------------------------*/
+.fim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fim > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--primary-color);
+}
+
+.fim > strong,
+a {
+  gap: 1px;
+  font-family: "Poppins";
+  font-style: bold;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--primary-color);
+}
+
+.right {
+  background-image: url(./assets/side-image.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+}

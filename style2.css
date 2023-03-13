@@ -1,0 +1,16 @@
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  label[for="myCheckbox"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+  }
+  
+  input[type="checkbox"]:checked + label {
+    background-color: green;
+  }
+  
